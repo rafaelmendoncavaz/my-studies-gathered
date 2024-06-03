@@ -182,3 +182,28 @@ Localizando o seu projeto e inicializando no Git:
 Iniciando o Git no projeto:
 -->> $ git init
 
+    CRIANDO UM REPOSITÓRIO NO GIT BASH USANDO SSH
+
+-->> echo "# repository-name"
+-->> git init
+-->> git add .
+-->> git commit -m "commit comment"
+-->> git branch -M main
+-->> git remote add origin git@github.com:username/repository-name.git
+-->> git push -u origin main
+
+    ENVIANDO UM REPOSITÓRIO EXISTENTE NO GIT BASH USANDO SSH
+
+-->> git remote add origin git@github.com:username/repository-name.git
+-->> git branch -M main
+-->> git push -u origin main
+
+// usar git init, git add . e git commit caso o repositório local ainda não exista. 
+
+    PUXANDO UM REPOSITÓRIO REMOTO ATUALIZADO PARA O LOCAL
+
+-->> git pull (supondo que estes repositórios já estejam linkados)
+
+    RESOLVENDO CONFLITOS DE MERGE
+
+-->> pelo VSCode você pode escolher quais alterações deseja manter
