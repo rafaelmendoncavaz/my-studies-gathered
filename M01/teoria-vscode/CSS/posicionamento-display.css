@@ -1,0 +1,9 @@
+.ilb{
+    display: inline-block;
+    background-color: red;
+    color: white;
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    margin: 5px;
+}

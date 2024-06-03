@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+.header--container {
+    box-shadow: .125rem .25rem .375rem rgba(0, 0, 0, 0.2);
+    padding: 1.5rem 7rem;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.header--content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 100%;
+}
+
+.header__title {
+    color: #364fc7;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.button__menu--burger {
+    display: none;
+}
+
+.header__list--shortcuts {
+    display: flex;
+    gap: 16px;
+}
+
+.list__links--shortcut {
+    text-decoration: none;
+    color: #868E96;
+}
+
+.all {
+    color: #212529;
+}
+
+.header__nav--container {
+    display: flex;
+    gap: 1rem;
+    max-width: 100%;
+}
+
+.div__icon {
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+    left: 2.5rem;
+    top: 0.8rem;
+}
+
+.search {
+    background-image: url(search_icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.nav__input--search {
+    width: 14.4375rem;
+    height: 2.375rem;
+    border: solid 2px transparent;
+    border-radius: 0.5rem;
+    outline: none;
+    background-color: #f1f3f5;
+    color: #abd5bd;
+    font-size: .75rem;
+    font-weight: 400;
+    padding-left: 2rem;
+}
+
+.div__profile {
+    border-radius: 50%;
+    border: solid 2px #364fc7;
+    width: 2.375rem;
+    height: 2.375rem;
+    background-image: url(profile.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media (max-width: 840px) {
+    .header--container {
+        padding: 1.5rem 2rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .header--content {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .header__main--content {
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .header__title {
+        font-size: 48px;
+    }
+
+    .button__menu--burger {
+    display: block;
+    width: 2.875rem;
+    height: 48px;
+    background-image: url(burger_menu.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+    }
+
+    .header__list--shortcuts {
+        flex-direction: column;
+        margin-top: -150%;
+        align-self: self-end;
+        text-align: right;
+    }
+
+    .list__link--shortcuts {
+        padding: 1.25rem 1rem;
+    }
+
+    .list__link--shortcuts:hover {
+        background-color: #F8F9FA;
+    }
+
+    .header__nav--container {
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .div__icon {
+        position: relative;
+        top: 3rem;
+        left: 1rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        display: none;
+    }
+
+    .div__profile {
+        display: none;
+    }
+
+    .nav__input--search {
+        width: 85%;
+        padding-left: 0;
+        padding-left: 3rem;
+        display: none;
+    }
+
+    .menu {
+        margin-top: 1.5rem;
+        transition: cubic-bezier(0.64, 0.02, 0.41, 1.25) .8s;
+    }
+
+    .bar {
+        display: flex;
+        transition: cubic-bezier(0.64, 0.02, 0.41, 1.25) .8s;
+    }
+}

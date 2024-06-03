@@ -1,0 +1,12 @@
+.ulist {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #c5c5c5;
+    border-radius: 10px;
+    list-style: none;
+}

@@ -1,0 +1,49 @@
+/*
+O posicionamento em CSS é a técnica usada para definir a localização de um elemento em relação ao seu contêiner pai. O posicionamento é uma das propriedades mais importantes do CSS sendo usado para criar layouts e estruturas em uma página da web.
+
+Existem cinco tipos principais de posicionamento em CSS: 
+estático
+relativo
+absoluto
+fixo
+sticky
+
+Cada tipo de posicionamento tem suas próprias propriedades e comportamentos.
+
+Posicionamento Estático
+
+O posicionamento estático é o padrão para todos os elementos em uma página da web. Os elementos com posicionamento estático não são afetados pelas propriedades de posicionamento, exibidos na ordem em que aparecem no código HTML. Eles são posicionados conforme o fluxo normal da página e podem ser movidos com outras propriedades, como margin ou padding.
+
+Posicionamento Relativo
+
+O posicionamento relativo permite mover um elemento em relação à sua posição normal. As propriedades top, bottom, left e right são usadas para definir a distância que o elemento deve se mover em relação à sua posição normal.
+
+Ex: position: relative; top: 20px; left: 20px;
+
+Posicionamento Absoluto
+
+O posicionamento absoluto é usado para definir a posição de um elemento em relação ao elemento pai mais próximo com posicionamento relativo, absoluto ou fixo. Quando um elemento tem posicionamento absoluto, ele é removido do fluxo normal da página e pode ser posicionado em qualquer lugar dentro do contêiner pai.
+
+Ex: <div style="position: relative;">
+        <div style="position: absolute; top: 20px; left: 20px;">
+
+Posicionamento Fixo
+
+O posicionamento fixo é usado para fixar um elemento em uma posição específica na página, independentemente de como a página é rolada. Um elemento com posicionamento fixo é posicionado em relação à janela do navegador e permanece no mesmo lugar mesmo que o usuário role a página.
+
+Ex: position: fixed; top: 0; left: 0;
+
+Posicionamento Sticky
+
+O posicionamento sticky é uma combinação do posicionamento relativo e fixo. Ele permite que um elemento seja posicionado de forma relativa em relação ao seu contêiner pai até que ele alcance uma determinada posição, quando então ele se torna fixo. É frequentemente usado para cabeçalhos de página que se movem com o usuário enquanto ele rola a página.
+
+Ex: position: sticky; top: 0;
+
+Propriedade z-index
+
+A propriedade z-index é uma propriedade CSS que determina a ordem de empilhamento de elementos posicionados em um plano tridimensional. Em outras palavras, ela define a posição de um elemento ao longo do eixo Z (profundidade), especificando se um elemento deve aparecer na frente ou atrás de outros elementos na página.
+
+Conclusão
+
+O posicionamento é uma técnica importante para criar layouts e estruturas em uma página da web. Existem cinco tipos principais de posicionamento em CSS: estático, relativo, absoluto, fixo e sticky. Cada tipo de posicionamento tem suas próprias propriedades e comportamentos. O uso adequado do posicionamento em CSS pode ajudar a criar designs mais criativos e interativos em uma página da web. É importante lembrar que o posicionamento deve ser usado com moderação e apenas quando necessário, para evitar problemas de acessibilidade e usabilidade. Além disso, é sempre importante testar o layout em diferentes tamanhos de tela e dispositivos para garantir que a página seja responsiva e se adapte a diferentes cenários.
+*/

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: lightgray;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+header{
+    box-sizing: content-box;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+}
+main > section{
+    box-sizing: border-box;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: white;
+}
+main > section > h3, p, cite, a{
+    box-sizing: border-box;
+    padding: 5px;
+    padding-top: 20px;
+}
+.hiperlink{
+    text-align: right;
+}
+footer{
+    background-color: #3590ff;
+    margin: 20px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: medium;
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+}
+label{
+    line-height: 2;
+}
+#email{
+border-radius: 5px;
+border-style: solid;
+border-color: black;
+border-width: 2px;
+}
+button{
+background-color: black;
+color: white;
+padding: 5px;
+border-radius: 10px;
+border-style: none;
+}

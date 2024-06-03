@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(70, 70, 70);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 62.5rem;
+    gap: .625rem;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.box {
+    border: solid .125rem transparent;
+    border-radius: .625rem;
+    background-color: #FF3366;
+    width: 18.75rem;
+    height: 18.75rem;
+}

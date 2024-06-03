@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+body {
+    /* define a fonte Roboto como a fonte principal do site, com fallback para fontes sans-serif. */
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .header {
+    /* torna o elemento 'header' um contêiner flexível para posicionar os outros elementos. */
+    display: flex;
+    /* permite que os elementos dentro do contêiner flexível 'header' sejam quebrados para uma nova linha se o espaço horizontal estiver limitado. */
+    flex-wrap: wrap;
+    /* distribui o espaço disponível entre os elementos do contêiner 'header', colocando-os nas extremidades opostas do contêiner. */
+    justify-content: space-between;
+    /* alinha verticalmente os elementos do contêiner 'header' ao centro. */
+    align-items: center;
+    /* adiciona uma sombra ao contêiner 'header'. */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    /* adiciona um espaço interno de 3 unidades de altura da viewport e 8 unidades de largura da viewport no contêiner 'header'. */
+    padding: 3vh 8vw;
+  }
+  
+  .header-logo {
+    /* define a capacidade de crescimento do elemento 'header-logo' para preencher o espaço restante do contêiner 'header' não utilizado por outros elementos. */
+    flex-grow: 1;
+    /* define a cor do texto do elemento 'header-logo'. */
+    color: #2f80ed;
+    /* define o tamanho da fonte do elemento 'header-logo'. */
+    font-size: 2em;
+    /* define a espessura da fonte do elemento 'header-logo'. */
+    font-weight: 600;
+  }
+  
+  .header-nav {
+    /* define a altura do elemento 'header-nav' como 100% da altura do contêiner 'header'. */
+    height: 100%;
+    /* torna o elemento 'header-nav' um contêiner flexível para posicionar os outros elementos. */
+    display: flex;
+    /* alinha horizontalmente os elementos dentro do contêiner 'header-nav' para a extremidade direita do contêiner. */
+    justify-content: flex-end;
+    /* adiciona um espaço horizontal de 4 unidades de largura da viewport entre os elementos dentro do contêiner 'header-nav'. */
+    gap: 4vw;
+    /* define a capacidade de crescimento do elemento 'header-nav' para preencher o espaço restante do contêiner 'header' não utilizado por outros elementos. */
+    flex-grow: 1;
+  }
+  
+  .header-nav-link {
+    /* remove a decoração do texto do link 'header-nav-link'. */
+    text-decoration: none;
+    /* define a cor do texto do link 'header-nav-link'. */
+    color: #000000;
+    /* adiciona um espaçamento de 4 pixels abaixo do texto do link 'header-nav-link'. */
+    padding-bottom: 4px;
+    /* adiciona uma borda inferior de 2 pixels sólida e transparente ao link 'header-nav-link'. */
+    border-bottom: 2px solid transparent;
+  }
+  
+  .header-nav-link:hover {
+    /* define a cor do texto do link 'header-nav-link' quando o mouse estiver sobre ele. */
+    color: #6ba2e9;
+    /* adiciona uma borda inferior de 2 pixels sólida e da cor #6ba2e9 ao link 'header-nav-link' quando o mouse estiver sobre ele. */
+    border-bottom: 2px solid #6ba2e9;
+  }
+  
+  .header-nav-link:focus {
+    /* define a cor do texto do link 'header-nav-link' quando ele estiver em foco. */
+    color: #2f80ed;
+    /* adiciona uma borda inferior de 2 pixels sólida e da cor #2f80ed ao link 'header-nav-link' quando ele estiver em foco. */
+    border-bottom: 2px solid #2f80ed;
+  }
+  

@@ -1,0 +1,44 @@
+/* O width com valor absoluto (px) é imutavel e não se adapta a nenhuma alteração no tamanho da janela ou tela*/
+.first-section{
+    width: 800px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+/*O width com porcentagel é proporcional, e adapta para mostrar todo o conteúdo independente do tamanho de sua tela ou janela*/
+.second-section{
+    margin-top: 5px;
+    width: 99%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+/*O elemento filho (parágrafo) possuirá um valor percentual condizente com a totalidade do seu elemento pai. 
+Exemplo: 
+    O elemento pai <body> é de 100% e o descendente <section> escala 99% deste elemento. O descendente de <section>, <p> aqui terá uma porcentagem em cima do que a <section> tem, se <p> tiver 50%, então <p> possui 50% de 99%*/
+    .second-paragraph{
+        background-color: blueviolet;
+        width: 80%;
+        height: 50%;
+    }
+/*Usando vw (view width) e vh (view height), ele irá adaptar para mostrar de acordo com o tamanho de sua janela ou tela. Seus valores serão interpretados em porcentagem, ou seja, se aplicar um valor de:
+vw90 -> o comprimento será de 90% do tamanho da tela ou janela
+vh50 -> a altura será de 50% do tamanho da tela ou janela*/
+
+/*
+.first-section{
+    width: 90vw;
+    height: 50vw;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.second-section{
+    margin-top: 5px;
+    width: 90vw;
+    height: 50vw;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+*/

@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    /*justify-content: */
+    /*Outros exemplos de justify content que podem ser usados:
+    flex-start (orientação ao início do container)
+    flex-end (orientação ao final do container)
+    center (orientação centralizada do container)
+    space-between (espaçamento igual entre objetos no container)
+    space-around (espaçamento ao redor dos objetos no container)*/
+    /*flex-wrap: */
+    /*Outros exemplos de flex-wrap que podem ser usados:
+    nowrap (Padrão. Indica a não quebra de linha)
+    wrap (Força a quebra de linha do elemento)
+    */
+}
+.box {
+    height: 150px;
+    width: 150px;
+    margin: 15px;
+    /*Exemplo para uso do flex-wrap: 
+    Caso coloque a width para ocupar 45% da tela, ela não irá obedecer de imediato, pois o flexbox ainda está obrigando os elementos a ficar na mesma linha*/
+}
+
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+}
+.yellow {
+    background-color: yellow;
+}

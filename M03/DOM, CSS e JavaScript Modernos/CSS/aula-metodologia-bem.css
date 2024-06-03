@@ -1,0 +1,59 @@
+/*
+A metodologia BEM (Block Element Modifier) é uma técnica de organização de CSS que facilita a criação e manutenção de estilos. Nesta aula, vamos aprender a organizar estilos utilizando o BEM.
+
+    Block: é a parte principal do componente e corresponde ao elemento HTML que está sendo estilizado. Por exemplo, se estamos estilizando um formulário, o bloco seria form. A classe correspondente seria .form.
+
+    Element: é uma parte do bloco e está sempre contido dentro do bloco. Para indicar que uma classe é um elemento, utilizamos dois underlines (__). Por exemplo, se o formulário contém um campo de nome, o elemento seria name, e a classe correspondente seria .form__name.
+
+    Modifier: é uma variação do bloco ou do elemento. Para indicar que uma classe é um modificador, utilizamos dois hífens (--). Por exemplo, se o campo de nome está desabilitado, o modificador seria disabled, e a classe correspondente seria .form__name--disabled.
+
+Uma das principais ideias por trás do BEM é a separação do CSS por componente. Isso significa que, para cada componente do HTML, devemos criar um arquivo CSS separado. Por exemplo, se tivermos um formulário em nosso HTML, devemos criar um arquivo form.css que contenha todos os estilos desse formulário.
+
+EXEMPLO: 
+
+Para entender melhor a organização de estilos com BEM, vamos utilizar o exemplo de um botão. Primeiramente, vamos criar um arquivo button.css e adicionar a classe .button para representar o bloco.
+*/
+
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+}
+
+/*
+Agora, vamos adicionar um elemento ao botão, representando o ícone.
+*/
+
+.button__icon {
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+/*
+Por fim, vamos adicionar um modificador para representar o botão desabilitado.
+*/
+
+.button--disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/*
+Com isso, temos nosso botão organizado com a metodologia BEM. O HTML correspondente ficaria da seguinte forma:
+
+<button class="button">
+  <span class="button__icon">+</span>
+  Adicionar
+</button>
+
+<button class="button button--disabled">
+  <span class="button__icon">+</span>
+  Adicionar
+</button>
+
+*/

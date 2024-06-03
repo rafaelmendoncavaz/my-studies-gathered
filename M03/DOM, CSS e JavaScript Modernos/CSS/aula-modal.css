@@ -1,0 +1,74 @@
+/*
+ESTILIZANDO MODAL COM DIALOG
+
+Como vimos na aula anterior, a tag dialog possui algumas propriedades de CSS padrões, como borda, o fundo escuro que fica por trás da modal. Devido a isso, não podemos adicionar alguns atributos diretamente nela, pois isso fará com que a tag perca este comportamento padrão de uma modal.
+
+dialog {
+  display: flex;
+  flex-direction: column;
+}
+
+Isso fará com que a modal não desapareça, pois nesse caso, adicionamos um display flexível a ela, dessa forma, mesmo se a modal estiver fechada, ainda assim estará visível na página.
+*/
+
+/*
+No nosso código HTML vamos alterar o ID da nossa tag dialog de modalContainer para modalController. 
+
+Para iniciar o nosso arquivo de estilizações src/styles/index.css vamos inserir um pequeno reset em alguns elementos do CSS.
+*/
+
+body, h1, button, div {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+  
+
+/*
+Agora vamos incrementar o conteúdo HTML da nossa modal adicionando uma div dentro da tag dialog
+
+Com a adição da div 'modal__container', você pode perceber que não teve nenhuma alteração visual na nossa modal, porém, isso vai ajudar bastante na hora da estilização.
+
+Então agora no nosso arquivo src/styles/index.css, estilizaremos apenas algumas propriedades da tag dialog:
+*/
+
+dialog {
+    padding: 0;
+    
+    width: 500px; /* a partir dessas propriedades a tag dialog terá largura e altura fixa. */
+    height: 300px;
+    
+    border: 1px solid black;
+}
+
+/*
+E iniciaremos a estilização da div modal__container inserindo as seguintes propriedades:
+*/
+
+.modal__container {
+    padding: 0;
+    
+    width: 500px;
+    height: 300px;
+    
+    border: 1px solid red;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*
+Anteriormente, ao utilizarmos a propriedade de display: flex na tag dialog, fazia com que a modal perdesse seu comportamento padrão, porém, ao utilizarmos a div class="modal__container" nós conseguimos contornar essa barreira e continuar a estilização da nossa modal de forma normal.
+
+É importante lembrar que sempre que o estilo da tag <dialog> for alterado ela perderá o comportamento padrão de uma modal.
+
+Agora que já vimos como contornar o problema, vamos aprender a estilizar ainda mais a tag dialog. Nela, podemos alterar o fundo, podendo desfocar, alterar a cor, etc.
+
+Para começar, vamos entender que esse "fundo" é chamado de backdrop e é um pseudo elemento da tag dialog. Para acessá-lo através do CSS, faremos da seguinte forma:
+*/
+
+dialog::backdrop {
+    background-color: rgba(0,0,0, 0.6);
+}

@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    width: 99vw;
+    height: 90vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 28px;
+    cursor: default;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main > section {
+    width: 1000px;
+    height: 220px;
+    margin-bottom: 120px;
+}
+
+.profiles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.profiles > li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #808080;
+}
+
+.profiles > li:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.profiles > li > img {
+    width: 200px;
+    height: 200px;
+    border: solid 2px transparent;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.profiles > li:hover img {
+    border: solid 2px #ffffff;
+    cursor: pointer;
+    width: 205px;
+    height: 205px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer > #manage-profiles {
+    background-color: #000000;
+    color: #ffffff;
+    border: solid 1px #ffffff;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-size: 18px;
+}
+
+footer > #manage-profiles:hover {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 12px 32px;
+    font-size: 20px;
+    cursor: pointer;
+}

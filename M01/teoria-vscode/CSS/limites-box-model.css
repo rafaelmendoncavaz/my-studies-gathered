@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+body * span{
+    margin: 0;
+    padding: 0;
+}
+#section-1{
+    margin: 50px;
+}
+.text_line{
+    border:black;
+    border-top: 5px solid;
+    border-right: 5px dotted;
+    border-bottom: 5px dashed;
+    border-left: 5px dotted;
+    margin: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    background-color:aqua;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.content-box{
+  box-sizing: content-box;
+  max-width: 250px;
+  background-color: blue;
+  padding: 20px;
+  border: 4px dashed black;
+  margin: 20px 20px 100px 20px;
+}
+.border-box {
+    box-sizing: border-box;
+    max-width: 250px;
+    background-color: blue;
+    padding: 20px;
+    border: 4px solid black;
+    border-radius: 50px;
+    margin: 2px 20px 100px 50px;
+  }
+  /* 
+  height e width podem ser sobrepujados pelo conteúdo
+
+  max-width e max-length impõem limites máximos de largura e altura na qual o conteúdo deve obedecer
+
+  sobre box-sizing, content-box é o valor que determinará que o tamanho da caixa deverá ser igual ao tamanho do conteúdo, e border-box diz que o conteúdo deve respeitar o tamanho da borda.
+
+  padding é o preenchimento, determinará a distância entre o conteúdo e a borda
+
+  border é o que determina a separação entre a margem e a borda
+
+  margin é a fronteira limite da página, igual a de uma folha. Espaçar a margem empurra todo o restante para dentro, dependendo das medidas estabelecidas
+  */

@@ -1,0 +1,20 @@
+*{
+    color:darkblue;
+}
+p{
+    font-style:italic;
+    color:white;
+    font-size: 20px;
+}
+.highlighted{
+    background-color: blueviolet;
+}
+#main-title{
+    font-size: 60px;
+    color:forestgreen;
+    border: 2px solid black;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body{
+    background-color: darkgray;
+}

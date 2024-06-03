@@ -1,0 +1,53 @@
+/*Os comentários abaixo são apenas explicações sobre cada linha. 
+NÃO deixe comentários em entregas e/ou projetos realizados, apenas em casos solicitados.*/
+
+/* Importa a fonte Roboto do Google Fonts para ser utilizada no documento */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* Define a fonte padrão de todos os elementos como Roboto, uma fonte sans-serif */
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Centraliza o texto dos elementos com a classe "centered" */
+.centered {
+  text-align: center;
+}
+
+/* Define a cor do texto dos elementos com a classe "text-blue" como um tom de azul (#3662ff) */
+.text-blue {
+  color: #3662ff;
+}
+
+/* Define o fundo dos elementos com a classe "bg-blue" como um tom de azul (#3662ff) e a cor do texto como branco */
+.bg-blue {
+  background: #3662ff;
+  color: white;
+}
+
+/* Transforma o texto dos elementos com a classe "uppercase" em letras maiúsculas */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* Define um espaçamento interno de 5px no topo e na base, e 20px nas laterais para os elementos <section> */
+section {
+  padding: 5px 20px;
+}
+
+/* Adiciona um sublinhado nos elementos <li> (itens de lista) */
+li {
+  text-decoration: underline;
+}
+
+.footer {
+  margin-top: 36px; /* Define uma margem superior de 36 pixels */
+  background-color: black; /* Define a cor de fundo como preto */
+  color: whitesmoke; /* Define a cor do texto como whitesmoke (branco) */
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.footer-p {
+  padding: 1rem 0; /* Define um espaçamento interno de 1rem (unidade relativa de medida) na parte superior e inferior dos parágrafos */
+  font-size: 18px; /* Define o tamanho da fonte como 18 pixels */
+}

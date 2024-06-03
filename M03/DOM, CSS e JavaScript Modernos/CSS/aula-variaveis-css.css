@@ -1,0 +1,26 @@
+/*
+As variáveis de CSS são uma ferramenta útil para criar designs escaláveis e reutilizáveis. Elas permitem que você armazene um valor, como uma cor ou um tamanho, em um nome que possa ser facilmente referenciado em todo o seu código CSS. Nesta aula, veremos como criar e usar variáveis de CSS e como elas podem tornar seu código mais limpo e fácil de manter.
+
+As variáveis em CSS são declaradas usando a sintaxe --nome-da-variavel e são definidas usando o valor desejado. Por exemplo:
+*/
+
+:root {
+    --cor-primaria: #4286f4;
+    --cor-secundaria: #f4a142;
+  }
+  
+  h1 {
+    color: var(--cor-primaria);
+  }
+
+/*
+As variáveis em CSS podem ser declaradas em qualquer lugar do documento CSS, mas é uma prática comum declará-las no elemento :root, que é o elemento raiz do documento HTML. Dessa forma, as variáveis ficam disponíveis em todo o documento.
+
+As variáveis de CSS oferecem vários benefícios para o desenvolvimento front-end:
+
+    Facilidade de manutenção: as variáveis permitem que você centralize seus valores de estilo em um local, facilitando fazer alterações globais.
+
+    Maior consistência: usar variáveis para valores repetidos em todo o seu código, como cores e tamanhos, pode ajudar a garantir que seu design seja consistente.
+
+    Escalabilidade: as variáveis de CSS são particularmente úteis em projetos grandes e complexos, onde é importante manter o código organizado e legível.
+*/

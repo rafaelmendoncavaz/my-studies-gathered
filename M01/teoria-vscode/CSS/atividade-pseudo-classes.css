@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 400px;
+    height: 350px;
+    padding: 50px;
+    margin: 50px auto;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 30px;
+}
+
+.card-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-form label {
+    margin-bottom: 5px;
+}
+
+.input-email {
+    background-color: #e9ecef;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    height: 50px;
+}
+
+.input-email:hover {
+    background-color: #dee2e6;
+}
+
+.input-email:focus {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+}
+
+.btn-sign {
+    background-color: #1971c2;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.btn-sign:hover {
+    background-color: #1864ab;
+}
+
+.btn-sign:focus {
+    border: 1px solid #000000;
+}
