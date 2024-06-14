@@ -1,0 +1,52 @@
+.title {
+    font-family: var(--font-1);
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.title.sm {
+    font-size: 1.5rem;
+}
+
+.title.md {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+}
+
+.title.lg {
+    font-size: clamp(2rem, 5vw, 3.125rem);
+}
+
+.title.black {
+    color: var(--color-4);
+}
+
+.title.white {
+    color: var(--color-2);
+}
+
+.title .red {
+    color: var(--color-3);
+}
+
+.title.center {
+    text-align: center;
+}
+
+.paragraph {
+    font-family: var(--font-2);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.paragraph.white {
+    color: var(--color-2);
+}
+
+.paragraph.black {
+    color: var(--color-4);
+}
+
+.paragraph.center {
+    text-align: center;
+}

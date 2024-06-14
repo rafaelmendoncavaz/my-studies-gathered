@@ -1,0 +1,19 @@
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(2rem, 5vw, 4rem);
+}
+
+.aboutSection h2 {
+    margin-top: .9375rem;
+}
+
+.aboutSection p {
+    text-align: justify;
+}
+
+@media (min-width: 900px) {
+    .flex {
+        flex-direction: row;
+    }
+}

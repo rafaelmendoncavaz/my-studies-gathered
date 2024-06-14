@@ -1,0 +1,18 @@
+:root {
+    --color-1: #EADECE;
+    --color-2: #FFFFFF;
+    --color-3: #E3512A;
+    --color-4: #000000;
+    --color-5: #2A645C;
+
+    --font-1: 'Montserrat', sans-serif;
+    --font-2: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--color-1);
+}
+
+img {
+    max-width: 100%;
+}
