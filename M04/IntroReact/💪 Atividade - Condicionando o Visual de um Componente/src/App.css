@@ -1,0 +1,37 @@
+#root {
+
+  height: 90vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+
+}
+
+button {
+
+  outline: none;
+
+  cursor: pointer;
+
+  padding: .4rem .8rem;
+
+  border: solid 1px transparent;
+  border-radius: 25px;
+
+  color: #fff;
+  background-color: blue;
+
+  font-weight: 600;
+
+  transition: background ease .3s;
+
+}
+
+button:hover {
+
+  filter: brightness(1.2);
+
+}
