@@ -5,11 +5,11 @@
 ## 🚀 The Road So Far...
 
 - ### 3/9 Modules Completed
-Last Updated: _06/13/2024_
+Last Updated: _07/16/2024_
 - __01. HTML and CSS Fundamentals [ 53/53 ]__ ✅
 - __02. Git and Logic with JavaScript [ 84/84 ]__ ✅ 
 - __03. DOM, Intermediate CSS and ECMA6 [ 81/81 ]__ ✅
-- __04. Introduction to React [ 24/66 ]__ ↗️
+- __04. Introduction to React [ 54/66 ]__ ↗️
 - __05. Advanced React [ 0/62 ]__ ❌
 - __06. BackEnd Fundamentals with Node.js [ 0/64 ]__ ❌
 - __07. Data Bank and ORM Prism [ 0/102 ]__ ❌
