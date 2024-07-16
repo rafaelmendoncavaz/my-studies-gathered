@@ -6,18 +6,18 @@
 
 - ### 3/9 Modules Completed
 Last Updated: _06/13/2024_
-    - __01. HTML and CSS Fundamentals [ 53/53 ]__ ✅
-    - __02. Git and Logic with JavaScript [ 84/84 ]__ ✅ 
-    - __03. DOM, Intermediate CSS and ECMA6 [ 81/81 ]__ ✅
-    - __04. Introduction to React [ 24/66 ]__ ↗️
-    - __05. Advanced React [ 0/62 ]__ ❌
-    - __06. BackEnd Fundamentals with Node.js [ 0/64 ]__ ❌
-    - __07. Data Bank and ORM Prism [ 0/102 ]__ ❌
-    - __08. BackEnd with Python and Django [ 0/172 ]__ ❌
-    - __09. Extra: PHP and Laravel [ 0/6 ]__ ❌
-    - __10. Extra: Wordpress [ 0/14 ]__ ❌
-    - __11. Extra: Java and Spring Boot [ 0/46 ]__ ❌
-    - __12. Extra: Angular [ 0/65 ]__ ❌
+- __01. HTML and CSS Fundamentals [ 53/53 ]__ ✅
+- __02. Git and Logic with JavaScript [ 84/84 ]__ ✅ 
+- __03. DOM, Intermediate CSS and ECMA6 [ 81/81 ]__ ✅
+- __04. Introduction to React [ 24/66 ]__ ↗️
+- __05. Advanced React [ 0/62 ]__ ❌
+- __06. BackEnd Fundamentals with Node.js [ 0/64 ]__ ❌
+- __07. Data Bank and ORM Prism [ 0/102 ]__ ❌
+- __08. BackEnd with Python and Django [ 0/172 ]__ ❌
+- __09. Extra: PHP and Laravel [ 0/6 ]__ ❌
+- __10. Extra: Wordpress [ 0/14 ]__ ❌
+- __11. Extra: Java and Spring Boot [ 0/46 ]__ ❌
+- __12. Extra: Angular [ 0/65 ]__ ❌
 
 ## ⁉️ FAQ
 
