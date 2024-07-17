@@ -4,14 +4,24 @@ function App() {
   const [newsArray, setNewsArray] = useState([])
 
   const fetchNews = async () => {
-    
-    await fetch("https://blog-fake-api.onrender.com/news")
-    .then(response => response.json())
-    .then(data => {
-      setNewsArray(data)
-      console.log(data)
-    })
 
+    try {
+      await fetch("https://blog-fake-api.onrender.com/news")
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`)
+        }
+        return response.json()
+      })
+      .then(data => {
+        setNewsArray(data)
+        console.log(data)
+      })
+
+    } catch (error) {
+      console.error('Error:', error)
+    }
+    
   }
 
   return (
