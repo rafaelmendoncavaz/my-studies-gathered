@@ -5,12 +5,12 @@ import { ProductContext } from "../../providers/ProductContext";
 export const ProductList = () => {
     const { productList } = useContext(ProductContext);
 
-    return(
+    return (
         <ul>
-            {productList.map(product => (
+            {productList?.map(product => (
                 <ProductCard key={product.id} product={product} />
             ))}
-            
+
         </ul>
     )
 }

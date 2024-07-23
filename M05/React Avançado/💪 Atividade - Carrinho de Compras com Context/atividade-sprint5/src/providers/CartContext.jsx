@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 
 export const CartContext = createContext({});
 
-export const CartProvider = ({children}) => {
+export const CartProvider = ({ children }) => {
 
     const [cartList, setCartList] = useState([]);
 
@@ -11,7 +11,7 @@ export const CartProvider = ({children}) => {
     }, 0)
 
     const addToCart = (addingProduct) => {
-        if(!cartList.some(product => product.id === addingProduct.id)){
+        if (!cartList.some(product => product.id === addingProduct.id)) {
             setCartList([addingProduct, ...cartList]);
         } else {
             alert("Produto já adicionado no carrinho")
@@ -23,7 +23,7 @@ export const CartProvider = ({children}) => {
         setCartList(newCartList);
     }
 
-    return(
+    return (
         <CartContext.Provider value={{ cartList, total, addToCart, removeFromCart }}>
             {children}
         </CartContext.Provider>

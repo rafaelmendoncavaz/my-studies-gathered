@@ -7,12 +7,12 @@ export const HomePage = () => {
    return (
       <main>
          <ProductProvider>
-            <ProductList />
+            <CartProvider>
+               <ProductList />
+               <Cart />
+            </CartProvider>
          </ProductProvider>
 
-         <CartProvider>
-            <Cart />
-         </CartProvider>
       </main>
    );
 };

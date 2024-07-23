@@ -1,24 +1,20 @@
 import { app } from "../services/api";
-import { createContext, useEffect, useState } from "react";
+import { createContext } from "react";
+import { useQuery } from "@tanstack/react-query"
 
 export const ProductContext = createContext({});
 
-export const ProductProvider = ({children}) => {
-    const [productList, setProductList] = useState([]);
+export const ProductProvider = ({ children }) => {
 
-    useEffect(() => {
-        const getProducts = async () => {
-            try {
-                const { data } = await app.get("/products");
-                setProductList(data);
-            } catch (error) {
-                console.error("Error fetching data!", error);
-            }
+    const { data: productList } = useQuery({
+        queryKey: ["product"],
+        queryFn: async () => {
+            const { data } = await app.get("/products")
+            return data
         }
-        getProducts();
-    }, [])
+    })
 
-    return(
+    return (
         <ProductContext.Provider value={{ productList }}>
             {children}
         </ProductContext.Provider>
