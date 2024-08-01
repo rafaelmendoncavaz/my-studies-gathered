@@ -1,12 +1,11 @@
 import { createStore, combineReducers, Store } from "redux"
-import fruitsReducer from "./modules/fruits/reducer"
+import { counterReducer, fruitsReducer } from "./modules/fruits/reducer"
 
 export type RootState = ReturnType<typeof reducers>;
 
 const reducers = combineReducers({
-  fruits: fruitsReducer
+  fruits: fruitsReducer,
+  counter: counterReducer
 })
 
-const store: Store<RootState> = createStore(reducers)
-
-export default store
+export const store: Store<RootState> = createStore(reducers)

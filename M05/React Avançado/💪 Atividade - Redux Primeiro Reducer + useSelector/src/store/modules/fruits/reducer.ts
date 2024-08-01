@@ -12,7 +12,7 @@ const initialState: State = [
   "Morango"
 ]
 
-const fruitsReducer: Reducer = (state = initialState, action) => {
+export const fruitsReducer: Reducer = (state = initialState, action) => {
   switch (action.type) {
     case "ADD_FRUIT": {
       const { payload } = action
@@ -24,4 +24,24 @@ const fruitsReducer: Reducer = (state = initialState, action) => {
   }
 }
 
-export default fruitsReducer
+export type CounterAction = {
+  type: 'ADD_ONE' | 'REMOVE_ONE',
+  payload: number
+}
+
+export const counterReducer = (state = 0, action: CounterAction) => {
+  switch (action.type) {
+    case 'ADD_ONE': {
+      const { payload } = action
+      return state + payload
+    }
+
+    case 'REMOVE_ONE': {
+      const { payload } = action
+      return state - payload
+    }
+
+    default:
+      return state
+  }
+}
