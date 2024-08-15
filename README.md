@@ -11,8 +11,8 @@ Last Updated: _08/13/2024_
 - __03. DOM, Intermediate CSS and ECMA6 [ 81/81 ]__ ✅
 - __04. Introduction to React [ 66/66 ]__ ✅
 - __05. Advanced React [ 62/62 ]__ ✅
-- __06. BackEnd Fundamentals with Node.js [ 51/64 ]__ ↗️
-- __07. Data Bank and Prisma ORM [ 0/102 ]__ ❌
+- __06. BackEnd Fundamentals with Node.js [ 64/64 ]__ ✅
+- __07. Data Bank and Prisma ORM [ 0/102 ]__ ↗️
 - __08. BackEnd with Python and Django [ 0/172 ]__ ❌
 - __09. Extra: PHP and Laravel [ 0/6 ]__ ❌
 - __10. Extra: Wordpress [ 0/14 ]__ ❌
