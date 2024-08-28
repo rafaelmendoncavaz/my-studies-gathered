@@ -1,0 +1,78 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Product {
+  id          Int     @id @default(autoincrement())
+  name        String
+  description String?
+  price       Float
+
+  storage_info Storage?
+
+  store_id Int
+  store    Store @relation(fields: [store_id], references: [id])
+
+  @@map("products")
+}
+
+model Store {
+  id       Int       @id @default(autoincrement())
+  name     String
+  products Product[]
+
+  @@map("stores")
+}
+
+model Storage {
+  id         Int     @id @default(autoincrement())
+  stock      Int
+  product_id Int     @unique
+  product    Product @relation(fields: [product_id], references: [id])
+
+  @@map("storages")
+}
+
+model Student {
+  id    Int    @id @default(autoincrement())
+  name  String
+  email String
+
+  student_info StudentInfo?
+  questions    Question[]
+
+  @@map("students")
+}
+
+model StudentInfo {
+  id      Int    @id @default(autoincrement())
+  phone   String
+  address String
+
+  student_id Int     @unique
+  student    Student @relation(fields: [student_id], references: [id])
+
+  @@map("students_info")
+}
+
+model Question {
+  id      Int     @id @default(autoincrement())
+  title   String
+  content String?
+
+  student_id Int
+  student    Student @relation(fields: [student_id], references: [id])
+
+  @@map("questions")
+}
